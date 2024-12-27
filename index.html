@@ -1,59 +1,187 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog personal de Aldo Arturo sobre tecnología, música y crecimiento personal.">
-    <meta name="keywords" content="blog, tecnología, música, Al2thebry, desarrollo, creatividad">
-    <meta name="author" content="Aldo Arturo">
-    <title>Al2thebry - Blog Personal</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    color: #333;
+}
 
-<section id="inicio">
-    <h1>Bienvenidos a Al2thebry</h1>
-    <p>Explora mi mundo de tecnología, creatividad y crecimiento personal.</p>
-</section>
+p {
+    font-size: 1rem;
+    color: #555;
+}
 
-<section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Soy Aldo Arturo, un apasionado por la tecnología, la música y las relaciones que nos definen como seres humanos. Este blog es mi espacio para compartir mis pensamientos y experiencias con el mundo.</p>
-</section>
+a {
+    text-decoration: none;
+    color: #e94e77;
+}
 
-<section id="blog">
-    <h2>Mi Blog</h2>
-    <div class="post">
-        <h3>Mi primer post en el blog</h3>
-        <p>Este es un espacio donde hablaré sobre mis ideas, proyectos y reflexiones. ¡Espero que disfrutes de este recorrido!</p>
-    </div>
-</section>
+a:hover {
+    color: #4d9de0;
+}
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <form id="form-contacto">
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu email" required>
-        <textarea placeholder="Tu mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    padding: 10px 0;
+}
 
-<footer>
-    <p>&copy; 2024 Al2thebry. Todos los derechos reservados.</p>
-</footer>
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el blog */
+.post {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        padding: 20px 10px;
+    }
+}/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #e94e77;
+}
+
+a:hover {
+    color: #4d9de0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el blog */
+.post {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        padding: 20px 10px;
+    }
+}</html>
